@@ -5,6 +5,7 @@ $curriculum = $_POST['curriculum'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+
 if(!empty($username)|| !empty($email)|| !empty($password)) { 
             $host = "localhost";
             $dbUsername = "root";
