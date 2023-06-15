@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assessment Website</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .question {
+      margin-bottom: 10px;
+    }
+    
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .submit-btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assessment Website</h1>
+  
+  <form action="submit.php" method="post">
+    <div class="question">
+      <p>1. What is the capital of France?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question1" value="a"> a) Paris
+        </label>
+        <label>
+          <input type="radio" name="question1" value="b"> b) London
+        </label>
+        <label>
+          <input type="radio" name="question1" value="c"> c) Madrid
+        </label>
+      </div>
+    </div>
+    
+    <div class="question">
+      <p>2. Who painted the Mona Lisa?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question2" value="a"> a) Leonardo da Vinci
+        </label>
+        <label>
+          <input type="radio" name="question2" value="b"> b) Vincent van Gogh
+        </label>
+        <label>
+          <input type="radio" name="question2" value="c"> c) Pablo Picasso
+        </label>
+      </div>
+    </div>
+    
+    <div class="question">
+     
