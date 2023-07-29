@@ -1,34 +1,35 @@
 <?php
-$studentIdNo = $_POST['studentIdNo'];
 $name = $_POST['name'];
 $curriculum = $_POST['curriculum'];
+$year = $_POST['year'];
+$section = $_POST['section'];
+$studentID = $_POST['studentID'];
 $password = $_POST['password'];
 
-
-if(!empty($username)|| !empty($email)|| !empty($password)) { 
+if (!empty($name|| !empty($studentID)|| !empty($password)) {
             $host = "localhost";
-            $dbUsername = "root";
+            $dbname = "root";
             $dbPassword = "";
-            $dbname = "sample";
+            $dbname = "assessment";
 
             //create connection
-            $conn = new mysqli ($host, $dbUsername, $dbPassword, $dbname);
+            $conn = new mysqli ($host, $dbName, $dbStudentID, $dbPassword);
 
             if($conn->connect_error){                
 
                         die("Connection failed." .$conn->connect_error);
             } else {
-                        $SELECT = "SELECT name FROM account_student WHERE name='".$name."'";
-                        $INSERT = "INSERT INTO account_student (student_id, year, section, password, name, curriculum) VALUES(?,?,?,?,?)";
+                        $SELECT = "SELECT studentID FROM account_student WHERE studentID='".$studentID."'";
+                        $INSERT = "INSERT INTO account_student (name, curriculum, year, section, studentID, password) VALUES(?,?,?,?,?,?)";
 
             //Prepare statement
                 $stmt = $conn->query($SELECT);
                 if($stmt->num_rows == 0){
 
                     $stmt = $conn->prepare($INSERT);
-                    $stmt->bind_param("sssss",$studentIdNo,$year,$section,$password,$name,$curriculum);
+                    $stmt->bind_param("ssisss",$name,$curriculum,$year,$section.$studentID,$password);
                     $stmt->execute();
-                    header("location: index.html");
+                    header("location: landingPage.html");
                     exit();
                     
                 }   else{

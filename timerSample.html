@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1 Hour Timer</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .timer {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .start-btn,
+    .reset-btn {
+      font-size: 24px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>1 Hour Timer</h1>
+  
+  <div class="timer">01:00:00</div>
+  
+  <button class="start-btn" onclick="startTimer()">Start</button>
+  <button class="reset-btn" onclick="resetTimer()">Reset</button>
+  
+  <script>
+    var timer; // variable to store the timer reference
+    var secondsRemaining = 3600; // 1 hour = 3600 seconds
+  
+    function startTimer() {
+      clearInterval(timer); // clear any existing timer
+  
+      timer = setInterval(function() {
+        secondsRemaining--;
+        if (secondsRemaining >= 0) {
+          updateTimerDisplay();
+        } else {
+          clearInterval(timer); // timer has ended
+          alert("Timer finished!");
+        }
+      }, 1000); // update timer every 1 second
+    }
+  
+    function resetTimer() {
+      clearInterval(timer);
+      secondsRemaining = 3600;
+      updateTimerDisplay();
+    }
+  
+    function updateTimerDisplay() {
+      var hours = Math.floor(secondsRemaining / 3600);
+      var minutes = Math.floor((secondsRemaining % 3600) / 60);
+      var seconds = secondsRemaining % 60;
+  
+      // Add leading zero if needed
+      hours = ("0" + hours).slice(-2);
+      minutes = ("0" + minutes).slice(-2);
+      seconds = ("0" + seconds).slice(-2);
+  
+      var timerDisplay = document.querySelector(".timer");
+      timerDisplay.textContent = hours + ":" + minutes + ":" + seconds;
+    }
+  </script>
+</body>
+</html>

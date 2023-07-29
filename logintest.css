@@ -123,8 +123,13 @@ input:focus {
     outline: none;
 }
 
-input[type="button"] {
-    width: 100%;
+.sign-in-btn {
+    /* width: 100%; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     padding: 10px;
     border: none;
     background-color: #ffffff00;
@@ -132,8 +137,15 @@ input[type="button"] {
     font-weight: 600;
     cursor: pointer;
     color: #ffffff;
-    
 }
+.sign-in-btn:hover{
+    border-bottom: #DBC8AC 1px solid;
+    position: relative;
+    color: #DBC8AC;
+}
+
+
+
 
 a.btn {
     display: block;

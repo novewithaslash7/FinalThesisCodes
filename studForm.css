@@ -1,0 +1,44 @@
+* {
+    user-select: none;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d0312d;
+    background-image: url(bg1.JPG);
+    background-position: calc(50% - 0px) calc(22% - 0px);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    width: 696px;
+    height: 600px;
+    left: 500px;
+    top: 94px;
+    
+    background: rgba(208, 49, 45, 0.7);
+    border-radius: 30px;
+}
+
+.stud_form {
+    position: absolute;
+    width: 597px;
+    height: 74px;
+    left: 422px;
+    top: 252px;
+    
+    background: #FFFFFF;
+    border-radius: 50px;
+    
+}
