@@ -27,7 +27,7 @@ if (!empty($name|| !empty($studentID)|| !empty($password))) {
                 if($stmt->num_rows == 0){
 
                     $stmt = $conn->prepare($INSERT);
-                    $stmt->bind_param("ssisss",$name,$curriculum,$year,$section.$studentID,$password);
+                    $stmt->bind_param("ssisss",$name,$curriculum,$year,$section,$studentID,$password);
                     $stmt->execute();
                     header("location: landingPage.html");
                     exit();
