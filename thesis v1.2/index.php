@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assesment Test</title>
+    <!-- copy this in each html codes -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-[100vh]">
-    <!-- 100% width height -->
-    <div class="flex justify-center items-center h-full bg-gray-400">
-        <!-- flex to center with 20px pad -->
+<body>
+    <div class="flex justify-center items-center h-[100vh] bg-gray-400">
         <div class="p-5
             w-1/3
             border
@@ -28,6 +27,7 @@
             </form>
         </div>
     </div>
+    
     
 </body>
 </html>
