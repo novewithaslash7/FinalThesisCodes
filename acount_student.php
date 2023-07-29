@@ -6,7 +6,7 @@ $section = $_POST['section'];
 $studentID = $_POST['studentID'];
 $password = $_POST['password'];
 
-if (!empty($name|| !empty($studentID)|| !empty($password)) {
+if (!empty($name|| !empty($studentID)|| !empty($password))) {
             $host = "localhost";
             $dbname = "root";
             $dbPassword = "";
