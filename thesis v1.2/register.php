@@ -24,11 +24,11 @@
                 <h2>Welcome to ICT Assessment Test</h2>
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Name">
                 <select class="p-3 w-full border rounded-xl border-solid" name="year" placeholder="Year">
-                        <option selected hidden value="">Curriculum</option>
-                        <option value="BS Information Technology">BS Information Technology</option>
-                        <option value="BS Information Systems">BS Information Systems</option>
+                    <option selected hidden value="">Curriculum</option>
+                    <option value="BS Information Technology">BS Information Technology</option>
+                    <option value="BS Information Systems">BS Information Systems</option>
 
-                    </select>
+                </select>
                 <!-- <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Curriculum"> -->
 
                 <div class="flex w-full flex-row gap-2">
