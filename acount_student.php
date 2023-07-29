@@ -19,13 +19,14 @@ if (!empty($name|| !empty($studentID)|| !empty($password))) {
 
                         die("Connection failed." .$conn->connect_error);
             } else {
+                
                         $SELECT = "SELECT studentID FROM account_student WHERE studentID='".$studentID."'";
                         $INSERT = "INSERT INTO account_student (name, curriculum, year, section, studentID, password) VALUES(?,?,?,?,?,?)";
 
             //Prepare statement
                 $stmt = $conn->query($SELECT);
                 if($stmt->num_rows == 0){
-                    
+
 
                     $stmt = $conn->prepare($INSERT);
                     $stmt->bind_param("ssisss",$name,$curriculum,$year,$section,$studentID,$password);
