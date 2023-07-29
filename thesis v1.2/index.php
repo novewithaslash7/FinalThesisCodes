@@ -24,7 +24,7 @@
                 ?>
                 <input class="p-3 border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
                 <input class="p-3 border rounded-xl border-solid" type="password" name="password" placeholder="Password">
-                <button class="bg-gray-100 p-3 border rounded-xl ">Login<button>
+                <button class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-200 ">Login<button>
             </form>
         </div>
     </div>
