@@ -51,7 +51,7 @@
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="B Answer">
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="C Answer"> 
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="D Answer">
-
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Correct Answer">
                     <select class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
                         <option selected hidden value="">Type</option>
                         <option value="Easy">Easy</option>
@@ -74,10 +74,12 @@
                     <th>B Answer</th>
                     <th>C Answer</th>
                     <th>D Answer</th>
+                    <th>Correct Answer</th>
                     <th>Type</th>
                 </tr>
 
                 <tr>
+                    <td>Test</td>
                     <td>Test</td>
                     <td>Test</td>
                     <td>Test</td>
