@@ -21,11 +21,15 @@
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password){
                 session_start();
-                // $id = $data['id'];
+                // save user data to session
                 $_SESSION['student_id']=$student_id;
                 $_SESSION['status']=true;
-                // $_SESSION['id'] = $id;
                 $_SESSION['role'] = 'user';
+
+                $_SESSION['name'] = $data['name'];
+                $_SESSION['curriculum'] = $data['curriculum'];
+                $_SESSION['year'] = $data['year'];
+                $_SESSION['section'] = $data['section'];
                 // code below redirect you to add-user page but i use ../ to return in the parent location
                 header("location:../landing/index.php");
 
