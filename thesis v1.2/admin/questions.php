@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    // Check if the user is authenticated and has the 'admin' role
+    if (!(isset($_SESSION['status']) && $_SESSION['status'] && isset($_SESSION['role']) && $_SESSION['role'] === 'admin')) {
+        // Redirect the user to a login page or display an access denied message
+        header("Location: ./index.php"); // Replace login.php with your login page URL
+        exit();
+    }
+?>
 <!-- kun naka doc type frontend code -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +34,7 @@
                 <ul><a class="hover:underline font-bold" href="./users.php">Users</a></ul>
                 <ul><a class="hover:underline font-bold" href="./questions.php">Questions</a></ul>
                 <ul><a class="hover:underline font-bold" href="./scores.php">Scores</a></ul>
-                <ul><a class="hover:underline font-bold" href="./index.php">Log Out</a></ul>
+                <ul><a class="hover:underline font-bold" href="./functions/logout.php">Log Out</a></ul>
             </li>
         </div>
     </div>

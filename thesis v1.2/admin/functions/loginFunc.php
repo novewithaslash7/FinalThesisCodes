@@ -20,11 +20,12 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password){
-
+                session_start();
                 $id = $data['id'];
                 $_SESSION['username']=$username;
                 $_SESSION['status']=true;
                 $_SESSION['id'] = $id;
+                $_SESSION['role'] = 'admin';
                 // code below redirect you to add-user page but i use ../ to return in the parent location
                 header("location:../users.php");
 
