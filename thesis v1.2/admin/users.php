@@ -45,8 +45,8 @@
                 <form action="" class="flex flex-col justify-center items-center gap-5">
                     
                     <h2>Users</h2>
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Name">
-                    <select class="p-3 bg-white w-full border rounded-xl border-solid" name="year" placeholder="Year">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
+                    <select class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
                         <option selected hidden value="">Curriculum</option>
                         <option value="BS Information Technology">BS Information Technology</option>
                         <option value="BS Information Systems">BS Information Systems</option>
@@ -55,7 +55,7 @@
                     
                     <div class="flex w-full flex-row gap-2">
                         
-                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year" placeholder="Year">
+                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year">
                             <option selected hidden value="">Year</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -63,7 +63,7 @@
                             <option value="4">4</option>
                         </select>
                         
-                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year" placeholder="Section">
+                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="section">
                             <option selected hidden value="">Section</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
