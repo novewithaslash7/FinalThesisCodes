@@ -26,10 +26,10 @@
     </style>
 </head>
 <body>
-    <div class="w-full flex flex-row justify-between p-5 bg-[#FFCDA3]">
+    <div class="w-full flex flex-row justify-between items-center p-5 bg-[#FFCDA3]">
         <div class="ml-10">
            
-            <img class="h-100 w-100" src="./WVSU.png">
+            <img class="h-[50px]" src="./SOICT.jpg">
 
         </div>
         <div class="mr-10">
