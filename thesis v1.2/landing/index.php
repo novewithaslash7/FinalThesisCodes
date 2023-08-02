@@ -26,9 +26,11 @@
     </style>
 </head>
 <body>
-    <div class="w-full flex flex-row justify-between p-5 bg-gray-200">
+    <div class="w-full flex flex-row justify-between p-5 bg-[#FFCDA3]">
         <div class="ml-10">
-            LOGO
+           
+            <img class="h-100 w-100" src="./WVSU.png">
+
         </div>
         <div class="mr-10">
             <li class="flex flex-row gap-10 items-center">
