@@ -26,12 +26,14 @@
     </style>
 </head>
 <body>
-    <div class="w-full flex flex-row justify-between items-center p-5 bg-[#FFCDA3]">
+
+    <div class="w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
         <div class="ml-10">
            
             <img class="h-[50px]" src="./SOICT.jpg">
 
         </div>
+
         <div class="mr-10">
             <li class="flex flex-row gap-10 items-center">
                 <ul><a class="hover:underline font-bold" href="./index.php">Home</a></ul>
@@ -42,8 +44,7 @@
         </div>
     </div>
 
-    
-    
+    <div class="flex h-screen bg-[#51C2D5] items-center space-y-4 flex-col justify-center">
     
 </body>
 </html>
