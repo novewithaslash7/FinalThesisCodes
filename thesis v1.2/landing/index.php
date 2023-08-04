@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div class="flex h-screen bg-[#51C2D5] items-center space-y-4 flex-col justify-center">
+    <div class="flex h-screen bg-[#BBF1FA] items-center space-y-4 flex-col justify-center">
     
 </body>
 </html>
