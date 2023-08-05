@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    quiz intro instruc
+    
 </body>
 </html>

@@ -44,7 +44,25 @@
         </div>
     </div>
 
-    <div class="flex h-screen bg-[#BBF1FA] items-center space-y-4 flex-col justify-center">
+    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+        <!-- image -->
+        <div class="w-1/2 p-20 flex justify-center">
+            <img src="https://picsum.photos/300/200" alt="">
+        </div>
+        <!-- title -->
+        <div class="flex w-1/2 flex-col justify-center items-end p-10">
+            <h1 class="text-7xl text-end font-bold">SOICT Assessment Test</h1>
+            <p class="text-end text-xl mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eum debitis nostrum eaque nihil praesentium accusantium? Exercitationem quas mollitia porro neque odit, recusandae eos saepe rem tenetur dicta dolorem natus!</p>
+            
+            <a href="../quiz/index.php">
+               <button class="w-25 border-4 border-solid border-black rounded-full hover:bg-[#F3E99F] p-5 mt-10">
+                    <p class="text-3xl font-bold">Start Test</p>
+                </button> 
+            </a>
+        </div>
+
+        
+    </div>
     
 </body>
 </html>
