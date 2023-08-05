@@ -76,17 +76,35 @@
                     <th>D Answer</th>
                     <th>Correct Answer</th>
                     <th>Type</th>
+                    <th>Actions</th>
                 </tr>
-
+                <?php 
+                    include "./functions/db.php";
+                    
+                    $query = "SELECT * FROM questions";
+                    $result = mysqli_query($conn, $query);
+                    if(mysqli_num_rows($result) > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                ?>
                 <tr>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
+                    <td><?php echo $row['question'] ?></td>
+                    <td><?php echo $row['a_answer'] ?></td>
+                    <td><?php echo $row['b_answer'] ?></td>
+                    <td><?php echo $row['c_answer'] ?></td>
+                    <td><?php echo $row['d_answer'] ?></td>
+                    <td><?php echo $row['correct_answer'] ?></td>
+                    <td><?php echo $row['type'] ?></td>
+                    <td>
+                        <div class="flex justify-around">
+                            <button>Edit</button>
+                            <button>Delete</button> 
+                        </div>
+                    </td>
                 </tr>
+                <?php 
+                        }
+                    }
+                ?>
                 
             </table>
             </div>
