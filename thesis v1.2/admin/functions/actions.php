@@ -36,16 +36,38 @@
 
     // delete user
 
-    // get user
 
     
     // add question
+    if(isset($_POST['addQuestion'])){
+        $question = $_POST['question'];
+        $a_answer = $_POST['a_answer'];
+        $b_answer = $_POST['b_answer'];
+        $c_answer = $_POST['c_answer'];
+        $d_answer = $_POST['d_answer'];
+        $correct_answer = $_POST['correct_answer'];
+        $type = $_POST['type'];
 
+        $INSERT = "INSERT INTO questions (question, a_answer, b_answer, c_answer, d_answer, correct_answer, type) VALUES (?,?,?,?,?,?,?)";
+        
+        $stmt = $conn->prepare($INSERT);
+        $stmt->bind_param("sssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $type);
+
+        if ($stmt->execute()) {
+            header("location: ../questions.php");
+            exit();
+        } else {
+            // echo "Error: " . $stmt->error;
+            header("location: ../questions.php?msg");
+        }
+        
+        // Close the statement and connection
+        
+        $conn->close();
+    };
     // update question
 
     // delete question
-
-    // get question
 
 
     

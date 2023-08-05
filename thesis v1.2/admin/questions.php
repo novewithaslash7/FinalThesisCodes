@@ -42,24 +42,24 @@
     <div class="h-[100vh] flex flex-row">
         <div class="p-10 flex justify-center items-center h-full w-1/2 ">
             <div class="bg-gray-200 flex flex-col p-5 border rounded-xl w-full">
-                <form action="" class="flex flex-col justify-center items-center gap-5">
+                <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     
                     <h2>Questions</h2>
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Question">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question">
 
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="A Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="B Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="C Answer"> 
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="D Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Correct Answer">
-                    <select class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer"> 
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer">
+                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer">
+                    <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
                         <option selected hidden value="">Type</option>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
                         <option value="Hard">Hard</option>
                     </select>
                     
-                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" value="ADD">
+                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addQuestion" value="ADD">
                 </form>
             </div>
         </div>
