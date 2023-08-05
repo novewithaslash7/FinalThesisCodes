@@ -85,15 +85,27 @@
                         <th>Score</th>                        
                         <th>Clasification</th>
                     </tr>
+                    <?php 
+                        include "./functions/db.php";
+                        
+                        $query = "SELECT * FROM scores";
+                        $result = mysqli_query($conn, $query);
+                        if(mysqli_num_rows($result) > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                    ?>
                     <tr>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
+                        <td><?php echo $row['student_id'] ?></td>
+                        <td><?php echo $row['name'] ?></td>
+                        <td><?php echo $row['curriculum'] ?></td>
+                        <td><?php echo $row['year'] ?></td>
+                        <td><?php echo $row['section'] ?></td>
+                        <td><?php echo $row['score'] ?></td>
+                        <td><?php echo $row['clasification'] ?></td>
                     </tr>
+                    <?php 
+                            }
+                        }
+                    ?>
                 </table>
             </div>
         </div>
