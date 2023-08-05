@@ -42,7 +42,7 @@
     <div class="h-[100vh] flex flex-row">
         <div class="p-10 flex justify-center items-center h-full w-1/2 ">
             <div class="bg-gray-200 flex flex-col p-5 border rounded-xl w-full">
-                <form action="" class="flex flex-col justify-center items-center gap-5">
+                <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     
                     <h2>Users</h2>
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
@@ -76,7 +76,7 @@
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
                     <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
                     
-                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" value="ADD">
+                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addUser" value="ADD">
                     <!-- <a class="hover:bg-[#F3E99F]" href="./register.php"></a> -->
                 </form>
             </div>
