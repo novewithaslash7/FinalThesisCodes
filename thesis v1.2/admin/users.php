@@ -86,23 +86,42 @@
             <div>
                 <table class="table-fixed border border-1 border-solid w-full">
                 
-                <tr>
-                    <th>Student ID</th>
-                    <th>Name</th>
-                    <th>Curriculum</th>
-                    <th>Year</th>
-                    <th>Section</th>
-                </tr>
-
-                <tr>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
-                </tr>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Curriculum</th>
+                        <th>Year</th>
+                        <th>Section</th>
+                        <th>Actions</th>
+                    </tr>
+                <?php 
+                    include "./functions/db.php";
+                    
+                    $query = "SELECT * FROM users";
+                    $result = mysqli_query($conn, $query);
+                    if(mysqli_num_rows($result) > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                ?>
+                    <tr>
+                        <td><?php echo $row['student_id'] ?></td>
+                        <td><?php echo $row['name'] ?></td>
+                        <td><?php echo $row['curriculum'] ?></td>
+                        <td><?php echo $row['year'] ?></td>
+                        <td><?php echo $row['section'] ?></td>
+                        <td>
+                            <div class="flex justify-around">
+                                <button>Edit</button>
+                                <button>Delete</button> 
+                            </div>
+                            
+                        </td>
+                    </tr>
+                <?php 
+                        }
+                    }
+                ?>
                 
-            </table>
+                </table>
             </div>
             
         </div>
