@@ -25,7 +25,7 @@
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
                 <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
                 <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="login" value="SIGN IN">
-                <a class="hover:underline" href="./register.php">Don't Have an Account? SIGN UP</a>
+                <a class="hover:underline hover:text-[#F3E99F]" href="./register.php">Don't Have an Account? SIGN UP</a>
             </form>
         </div>
         
