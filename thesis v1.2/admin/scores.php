@@ -53,7 +53,7 @@
                         <option value="4">4</option>
                     </select>
                     <!-- section -->
-                    <select class="p-3 bg-white border rounded-xl border-solid" name="year" placeholder="Section">
+                    <select class="p-3 bg-white border rounded-xl border-solid" name="section" placeholder="Section">
                         <option selected hidden value="">Section</option>
                         <option value="A">A</option>
                         <option value="B">B</option>
@@ -62,14 +62,14 @@
                     </select>
 
                     <!-- curriculumn -->
-                    <select class="p-3 bg-white border rounded-xl border-solid" name="year" placeholder="Year">
+                    <select class="p-3 bg-white border rounded-xl border-solid" name="curriculum" placeholder="Year">
                         <option selected hidden value="">Curriculum</option>
                         <option value="BS Information Technology">BS Information Technology</option>
                         <option value="BS Information Systems">BS Information Systems</option>
 
                     </select>
                     <!-- ACTION -->
-                    <input class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-300 " type="submit" value="Filter">
+                    <input class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-300 " name="filter" type="submit" value="Filter">
                 </form>
 
             </div>
@@ -87,8 +87,16 @@
                     </tr>
                     <?php 
                         include "./functions/db.php";
+
+                        if(isset($_GET['year']) && isset($_GET['curriculum']) && isset($_GET['section'])){
+                            $year = $_GET['year'];
+                            $curriculum = $_GET['curriculum'];
+                            $section = $_GET['section'];
+                            $query = "SELECT * FROM scores WHERE year='$year' AND section='$section' AND curriculum='$curriculum'";
+                        }else{
+                            $query = "SELECT * FROM scores";
+                        }
                         
-                        $query = "SELECT * FROM scores";
                         $result = mysqli_query($conn, $query);
                         if(mysqli_num_rows($result) > 0){
                             while($row = mysqli_fetch_assoc($result)){
