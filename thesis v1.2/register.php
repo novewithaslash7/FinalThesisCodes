@@ -16,14 +16,14 @@
             rounded-xl
             bg-[#FF6D60]/70
             ">
-            <form action="" class="flex flex-col justify-center items-center gap-5">
+            <form action="./functions/regFunc.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                 <!-- if naka php php code daa -->
                 <?php
                 
                 ?>
                 <h2>Welcome to ICT Assessment Test</h2>
-                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Name">
-                <select class="p-3 w-full border rounded-xl border-solid" name="year" placeholder="Year">
+                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
+                <select class="p-3 w-full border rounded-xl border-solid" name="curriculum" placeholder="curriculum">
                     <option selected hidden value="">Curriculum</option>
                     <option value="BS Information Technology">BS Information Technology</option>
                     <option value="BS Information Systems">BS Information Systems</option>
@@ -41,7 +41,7 @@
                         <option value="4">4</option>
                     </select>
                     
-                    <select class="p-3 w-1/2 border rounded-xl border-solid" name="year" placeholder="Section">
+                    <select class="p-3 w-1/2 border rounded-xl border-solid" name="section" placeholder="Section">
                         <option selected hidden value="">Section</option>
                         <option value="A">A</option>
                         <option value="B">B</option>
@@ -53,10 +53,10 @@
 
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
                 <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
-                <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Re-Enter Password">
+                <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="re_password" placeholder="Re-Enter Password">
                 
-                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" value="REGISTER">
-                <a class="hover:bg-[#F3E99F]" href="./register.php"></a>
+                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " name="register" type="submit" value="REGISTER">
+                <!-- <a class="hover:bg-[#F3E99F]" href="./register.php"></a> -->
             </form>
         </div>
         
