@@ -40,7 +40,7 @@
     </div>
 
     <div class="h-[100vh] flex flex-row">
-        <div class="p-10 flex justify-center items-center h-full w-1/2 ">
+        <div class="p-10 flex justify-center items-center h-full w-1/2 m-5 ">
             <div class="bg-gray-200 flex flex-col p-5 border rounded-xl w-full">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     

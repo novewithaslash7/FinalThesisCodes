@@ -26,10 +26,14 @@
     </style>
 </head>
 <body>
-    <div class="w-full flex flex-row justify-between p-5 bg-gray-200">
-        <div class="ml-10">
-            LOGO
+    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
+        <div class="flex items-center gap-3 ml-10">
+            
+            <img class="h-[70px]" src="./wvsu.png"> 
+            <img class="h-[80px]" src="./logo.png">
+
         </div>
+            
         <div class="mr-10">
             <li class="flex flex-row gap-10 items-center">
                 <ul><a class="hover:underline font-bold" href="./index.php">Home</a></ul>
@@ -38,6 +42,33 @@
                 <ul><a class="hover:underline font-bold" href="../functions/logout.php">Log Out</a></ul>
             </li>
         </div>
+    </div>
+
+    <!-- left image -->
+    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+        <!-- image -->
+        <div class="w-1/2 p-20 flex justify-center">
+            <img src="https://picsum.photos/300/200" alt="">
+        </div>
+
+        <div class="flex w-1/2 flex-col justify-center items-end p-10">
+            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
+        </div>  
+    </div>
+    <!-- right image -->
+    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+        
+
+        <div class="flex w-1/2 flex-col justify-center items-end p-10">
+            <!-- use text-start to start the paragraph in left and end to right -->
+            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
+        </div>
+        <!-- image -->
+        <div class="w-1/2 p-20 flex justify-center">
+            <img src="https://picsum.photos/300/200" alt="">
+        </div>  
     </div>
 
     

@@ -27,11 +27,12 @@
 </head>
 <body>
 
-    <div class="w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
-        <div class="ml-10">
+    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
+        <div class="flex gap-3 ml-10">
            
-            <img class="h-[50px]" src="./SOICT.jpg">
-
+            <img class="h-[70px]" src="./wvsu.png"> 
+            <img class="h-[80px]" src="./logo.png">
+            
         </div>
 
         <div class="mr-10">
@@ -51,8 +52,8 @@
         </div>
         <!-- title -->
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">SOICT Assessment Test</h1>
-            <p class="text-end text-xl mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eum debitis nostrum eaque nihil praesentium accusantium? Exercitationem quas mollitia porro neque odit, recusandae eos saepe rem tenetur dicta dolorem natus!</p>
+            <h1 class="text-7xl text-end font-bold">Yearly Assessment For ICT Students</h1>
+            <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
             
             <a href="../quiz/index.php">
                <button class="w-25 border-4 border-solid border-black rounded-full hover:bg-[#F3E99F] p-5 mt-10">
